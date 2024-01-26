@@ -19,20 +19,29 @@ let madLibResult = document.getElementById("madLibResult");
 madLibRun.addEventListener('click', async (event) => {
     if(madLibInput1.value !== "" && madLibInput2.value !== "" && madLibInput3.value !== "" && madLibInput4.value !== "" && madLibInput5.value !== "" && madLibInput6.value !== "" && madLibInput7.value !== "" && madLibInput8.value !== "" && madLibInput9.value !== "" && madLibInput10.value !== "")
     {
-
-        let result = await madLibAgain(madLibInput.value);
-        madLibDiv.className = "lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center hidden";
-        madLibAppear.className = "lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center";
+        let result = await MadLibApi(madLibInput1.value, madLibInput2.value, madLibInput10.value, madLibInput3.value, madLibInput4.value, madLibInput5.value, madLibInput6.value, madLibInput7.value, madLibInput8.value, madLibInput9.value);
+        madLibDiv.className = "lg:h-[440px] lg:w-[1066px] w-96 h-[650px] bg-[#161A30] pb-6 hidden";
+        madLibAppear.className = "lg:h-[440px] lg:w-[1066px] w-96 h-[650px] bg-[#161A30] pb-6 flex items-center justify-center";
         madLibAgain.className = "lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16";
         madLibRun.className = "lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16 hidden";
-        madLibResult.textContent = result;
+        madLibResult.innerText = result;
+        console.log(result);
     }
 })
 
 madLibAgain.addEventListener('click', (event) => {
-    madLibDiv.className = "lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center";
-    madLibAppear.className = "lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center hidden";
+    madLibDiv.className = "lg:h-[440px] lg:w-[1066px] w-96 h-[650px] bg-[#161A30] pb-6";
+    madLibAppear.className = "lg:h-[440px] lg:w-[1066px] w-96 h-[650px] bg-[#161A30] pb-6 flex items-center justify-center hidden";
     madLibAgain.className = "lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16 hidden";
     madLibRun.className = "lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16";
-    madLibInput.value = "";
+    madLibInput1.value = "";
+    madLibInput2.value = "";
+    madLibInput3.value = "";
+    madLibInput4.value = "";
+    madLibInput5.value = "";
+    madLibInput6.value = "";
+    madLibInput7.value = "";
+    madLibInput8.value = "";
+    madLibInput9.value = "";
+    madLibInput10.value = "";
 })
