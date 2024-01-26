@@ -1301,6 +1301,10 @@ input:checked + .toggle-bg {
   height: 18rem;
 }
 
+.h-\[140px\] {
+  height: 140px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1359,6 +1363,14 @@ input:checked + .toggle-bg {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[360px\] {
+  width: 360px;
 }
 
 .flex-1 {
@@ -1523,6 +1535,10 @@ input:checked + .toggle-bg {
   border-radius: 100px;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-e-lg {
   border-start-end-radius: 0.5rem;
   border-end-end-radius: 0.5rem;
@@ -1666,6 +1682,10 @@ input:checked + .toggle-bg {
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-30 {
+  --tw-bg-opacity: 0.3;
+}
+
 .bg-\[url\(\)\] {
   background-image: url();
 }
@@ -1749,6 +1769,21 @@ input:checked + .toggle-bg {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pt-2 {
@@ -1899,6 +1934,18 @@ input:checked + .toggle-bg {
   padding-bottom: 20rem;
 }
 
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-52 {
+  padding-bottom: 13rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1948,6 +1995,11 @@ input:checked + .toggle-bg {
 
 .text-7xl {
   font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -2014,6 +2066,19 @@ input:checked + .toggle-bg {
 .text-\[\#161\] {
   --tw-text-opacity: 1;
   color: rgb(17 102 17 / var(--tw-text-opacity));
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#F0\] {
+  color: #F0;
+}
+
+.text-\[\#F0ECE5\] {
+  --tw-text-opacity: 1;
+  color: rgb(240 236 229 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -2087,6 +2152,10 @@ input:checked + .toggle-bg {
   src: url(../assets/Jost-Bold.ttf);
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2137,6 +2206,10 @@ input:checked + .toggle-bg {
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .focus\:outline-none:focus {
@@ -2298,6 +2371,11 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .group:hover .dark\:group-hover\:text-\[\#F0ECE5\]) {
+  --tw-text-opacity: 1;
+  color: rgb(240 236 229 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:ml-64 {
     margin-left: 16rem;
@@ -2380,6 +2458,10 @@ input:checked + .toggle-bg {
 
   .lg\:pb-72 {
     padding-bottom: 18rem;
+  }
+
+  .lg\:pb-28 {
+    padding-bottom: 7rem;
   }
 
   .lg\:text-9xl {
