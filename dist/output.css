@@ -1234,6 +1234,14 @@ input:checked + .toggle-bg {
   height: 46px;
 }
 
+.h-\[70px\] {
+  height: 70px;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
