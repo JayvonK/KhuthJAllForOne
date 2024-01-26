@@ -1129,6 +1129,16 @@ input:checked + .toggle-bg {
   z-index: 50;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1151,6 +1161,22 @@ input:checked + .toggle-bg {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -1257,6 +1283,22 @@ input:checked + .toggle-bg {
   height: 3rem;
 }
 
+.h-\[60\] {
+  height: 60;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[650px\] {
+  height: 650px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1329,6 +1371,18 @@ input:checked + .toggle-bg {
   width: 3rem;
 }
 
+.w-\[405px\] {
+  width: 405px;
+}
+
+.w-\[410px\] {
+  width: 410px;
+}
+
+.w-\[420px\] {
+  width: 420px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1399,6 +1453,10 @@ input:checked + .toggle-bg {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
@@ -1409,6 +1467,10 @@ input:checked + .toggle-bg {
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
 .flex-wrap {
@@ -1593,6 +1655,10 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-\[\] {
+  background-color: ;
 }
 
 .bg-opacity-30 {
@@ -2172,6 +2238,12 @@ input:checked + .toggle-bg {
     margin-bottom: 0.75rem;
   }
 
+  @media (min-width: 1024px) {
+    .lg\:lg\:mt-6 {
+      margin-top: 1.5rem;
+    }
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2216,6 +2288,14 @@ input:checked + .toggle-bg {
     height: 100px;
   }
 
+  .lg\:h-\[440px\] {
+    height: 440px;
+  }
+
+  .lg\:h-\[60px\] {
+    height: 60px;
+  }
+
   .lg\:w-\[1066px\] {
     width: 1066px;
   }
@@ -2258,6 +2338,14 @@ input:checked + .toggle-bg {
 
   .lg\:w-\[930px\] {
     width: 930px;
+  }
+
+  .lg\:w-\[420px\] {
+    width: 420px;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-rows-2 {
