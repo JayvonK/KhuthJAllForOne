@@ -107,26 +107,26 @@
 
     <div class="bg-[url('/assets/background.jpg')] bg-cover lg:ml-[470px] lg:mt-[209px]">
         <div class="flex justify-center lg:pt-44 pt-28">
-            <div class="lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center">
+            <div id="greaterDiv" class="lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center">
                 <div class="lg:flex lg:items-center lg:justify-center grid grid-rows-3">
-                    <input type="text" name=""  placeholder="123"
+                    <input id="greaterInput1" type="text" name=""  placeholder="123"
                         class="lg:w-[360px] lg:h-[140px] rounded-2xl font-Jost lg:text-8xl text-center h-20 w-64 text-6xl">
                     <h1 class="lg:text-9xl text-[#F0ECE5] font-Jost text-6xl px-16 text-center">?</h1>
-                    <input type="text" name=""  placeholder="456"
+                    <input id="greaterInput2" type="text" name=""  placeholder="456"
                         class="lg:w-[360px] lg:h-[140px] rounded-2xl font-Jost lg:text-8xl text-center h-20 w-64 text-6xl">
                 </div>
                 
             </div>
-            <div class="lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center hidden">
-                <input type="text" class="lg:w-[900px] text-[#F0ECE5] font-Jost lg:text-9xl text-6xl bg-[#161A30] border-none w-80 text-center" readonly>
+            <div id="greaterAppear" class="lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center hidden">
+                <input id="greaterResult" type="text" class="lg:w-[900px] text-[#F0ECE5] font-Jost lg:text-4xl text-2xl bg-[#161A30] border-none w-80 text-center" readonly>
             </div>
         </div>
         <div class="flex justify-center lg:pt-28 pt-16">
-            <div class="lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16">
+            <div id="greaterRun" class="lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16">
                 <h2 class="text-[#F0ECE5] font-Jost lg:text-6xl text-4xl">RUN</h2>
             </div>
-            <div class="lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16 hidden">
-                <h2 class="text-[#F0ECE5] font-Jost lg:text-6xl text-4xl">AGAIN</h2>
+            <div id="greaterAgain" class="lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16 hidden">
+                <h2  class="text-[#F0ECE5] font-Jost lg:text-6xl text-4xl">AGAIN</h2>
             </div>
         </div>
         <h1 class="font-Jost lg:text-3xl text-[#161A30] text-center lg:pb-28 text-2xl pb-72 lg:pt-10 pt-8">*Instructions: Input
@@ -141,6 +141,6 @@
 
 
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="../scripts/app.js"></script>
+    <script type="module" src="../scripts/greater.js"></script>
 </body>
 </html>

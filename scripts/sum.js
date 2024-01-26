@@ -9,7 +9,7 @@ let sumInput2 = document.getElementById("sumInput2");
 let sum = document.getElementById("sum");
 
 sumRun.addEventListener('click', async (event) => {
-    if (sumInput1 !== "" && sumInput2 !== "") {
+    if (sumInput1.value !== "" && sumInput2.value !== "") {
         let answer = await SumApi(sumInput1.value, sumInput2.value);
         sumDiv.className += " hidden";
         sumAppear.className = "lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center"
