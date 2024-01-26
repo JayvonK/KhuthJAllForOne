@@ -13,7 +13,7 @@ sumRun.addEventListener('click', async (event) => {
         let answer = await SumApi(sumInput1.value, sumInput2.value);
         sumDiv.className += " hidden";
         sumAppear.className = "lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center"
-        sum.value = answer;
+        sum.textContent = answer;
         console.log(answer);
         sumRun.className = "lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16 hidden";
         sumAgain.className = "lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16 ";

@@ -1285,6 +1285,10 @@ input:checked + .toggle-bg {
   width: 30px;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1421,6 +1425,14 @@ input:checked + .toggle-bg {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-2xl {
@@ -1706,6 +1718,21 @@ input:checked + .toggle-bg {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-medium {
@@ -2129,6 +2156,14 @@ input:checked + .toggle-bg {
     width: 50px;
   }
 
+  .lg\:w-\[9300px\] {
+    width: 9300px;
+  }
+
+  .lg\:w-\[930px\] {
+    width: 930px;
+  }
+
   .lg\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
@@ -2222,6 +2257,11 @@ input:checked + .toggle-bg {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 
