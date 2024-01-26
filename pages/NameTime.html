@@ -109,19 +109,29 @@
 
     <div class="bg-[url('/assets/background.jpg')] bg-cover lg:ml-[470px] lg:mt-[209px]">
         <div class="flex justify-center lg:pt-44 pt-28">
-            <div class="lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center">
-                <div class="lg:flex lg:items-center lg:justify-center grid grid-rows-3">
+            <div class="lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex lg:items-center justify-center">
+                <div class="flex lg:items-center lg:justify-center">
                     <!-- <input type="text" name="" id="sumInput1" placeholder="123"
                         class="lg:w-[360px] lg:h-[140px] rounded-2xl font-Jost lg:text-8xl text-center h-20 w-64 text-6xl"> -->
-                    <div class="grid grid-rows-2 w-[940px]">
-                        <div class="flex justify-center">
-                            <h1 class="lg:py-0 text-[#F0ECE5] font-Jost text-6xl w-[200px] text-left">Name:</h1>
-                        <input type="text" class="w-[690px]">
-                        </div>
-                        <div>
-
+                        
+                    <div class="grid lg:grid-rows-2 lg:w-[940px] grid-rows-4">
+                        <div class="lg:hidden flex items-center">
+                            <h2 class="lg:hidden text-[#F0ECE5] text-3xl font-Jost inline-block align-bottom">NAME:</h2>
                         </div>
                         
+                        <div class="flex justify-center lg:py-5">
+                            <h1 class="lg:block text-[#F0ECE5] lg:text-6xl lg:w-[200px] text-left font-Jost hidden">Name:</h1>
+                            <input type="text" class="lg:w-[690px] lg:text-4xl lg:h-auto text-[#161A30] w-[250px] h-[46px] text-3xl font-Jost">
+                        </div>
+                        <div class="lg:hidden flex items-center">
+                            <h2 class="lg:hidden text-[#F0ECE5] text-3xl font-Jost inline-block align-bottom">TIME:</h2>
+                        </div>
+                        <div class="flex justify-center lg:py-5">
+                            <h1 class="lg:block lg:py-0 text-[#F0ECE5] font-Jost text-6xl lg:w-[200px] text-left hidden">Time:</h1>
+                            <input type="text" class="lg:w-[690px] lg:text-4xl lg:h-auto text-[#161A30] w-[250px] h-[46px] text-3xl font-Jost">
+                        </div>
+                        
+
                     </div>
                     <!-- <input type="text" name="" id="sumInput2" placeholder="456"
                         class="lg:w-[360px] lg:h-[140px] rounded-2xl font-Jost lg:text-8xl text-center h-20 w-64 text-6xl"> -->
