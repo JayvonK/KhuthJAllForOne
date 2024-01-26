@@ -9,7 +9,11 @@ module.exports = {
     "./pages/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        Jost : ['Jost']
+      }
+    },
   },
   plugins: [
     require('flowbite/plugin')
