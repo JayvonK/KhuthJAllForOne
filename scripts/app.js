@@ -57,8 +57,23 @@ NameTimeApi("Jayvon", "15:00");
 const MadLibApi = async (celebrityName, animal, bodyPart, nounThatEndsWithS, wholeNumberGreaterThan1, time, height, adjective, name, condiment) => {
     const promise = await fetch(`https://khuthjallforone.azurewebsites.net/MadLib/EnterCelebrityName/${celebrityName}/EnterAnimal/${animal}/EnterBodyPart/${bodyPart}/EnterNounThatEndsWithS/${nounThatEndsWithS}/EnterWholeNumberGreaterThan1/${wholeNumberGreaterThan1}/EnterTime/${time}/EnterHeight/${height}/EnterAdjective/${adjective}/EnterName/${name}/EnterCondiment/${condiment}`);
     const data = await promise.text();
+    console.log(data)
+}
+
+MadLibApi("1", "2", "3", "4", "5", "6", "7", "8", "9", "10");
+
+const GreaterOrLessApi = async (num1, num2) => {
+    const promise = await fetch(`https://khuthjallforone.azurewebsites.net/GreaterOrLessThan/EnterTwoNumbers/${num1}/${num2}`);
+    const data = await promise.text();
     console.log(data);
 }
 
-MadLibApi("1", "2", "1", "2", "1", "6", "1", "2", "1", "2");
+GreaterOrLessApi("15", "12");
 
+const EightBallApi = async (question) => {
+    const promise = await fetch(`https://khuthjallforone.azurewebsites.net/EightBall/AskMeYesOrNoQuestion/${question}`);
+    const data = await promise.text();
+    console.log(data);
+}
+
+EightBallApi("Am I smart?");
