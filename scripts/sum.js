@@ -21,7 +21,7 @@ sumRun.addEventListener('click', async (event) => {
 })
 
 sumAgain.addEventListener('click', (event) => {
-    sumRun.className = "h-[120px] w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer";
+    sumRun.className = "lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16";
     sumAgain.className = "lg:h-[120px] lg:w-[471px] bg-[#161A30] rounded-[100px] flex justify-center items-center hover:cursor-pointer w-56 h-16 hidden";
     sumDiv.className = "lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center";
     sumAppear.className = "lg:h-[275px] lg:w-[1066px] w-96 h-72 bg-[#161A30] flex items-center justify-center hidden";
